@@ -13,8 +13,8 @@
 
 ### 1. Клонируйте репозиторий:
 ```bash
-git clone https://github.com/your-repo/weather-app.git
-cd weather-app
+git clone https://github.com/Vinogradov-solo/WeatherApplication.git
+cd WeatherApplication
 ```
 ### 2. Запустите приложение:
 ```bash
