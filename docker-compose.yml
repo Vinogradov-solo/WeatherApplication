@@ -1,0 +1,29 @@
+
+services:
+  app:
+    build: .
+    container_name: weather_app
+    ports:
+      - "8080:8080"
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://db:5432/weatherdb
+      - SPRING_DATASOURCE_USERNAME=postgres
+      - SPRING_DATASOURCE_PASSWORD=12345
+      - WEATHER_API_KEY=твой_ключ_от_OpenWeather
+    depends_on:
+      - db
+
+  db:
+    image: postgres:latest
+    container_name: my_postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 12345
+      POSTGRES_DB: weatherdb
+    ports:
+      - "5438:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:
