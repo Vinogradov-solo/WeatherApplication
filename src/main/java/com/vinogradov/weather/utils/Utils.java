@@ -11,7 +11,7 @@ public class Utils {
 
     /**
      * Метод для отображения сообщений об ошибке
-     * @param message
+     * @param message Сообщение ошибки
      */
     public static void showErrorMessage(String message) {
         // Выводим диалоговое окно с ошибкой
@@ -24,7 +24,7 @@ public class Utils {
 
     /**
      * Метод форматирования стандартного вывода LocalDateTime
-     * @param dateTime
+     * @param dateTime стандартный объект типа LocalDateTime
      * @return String дата в формате "dd MMM yyyy HH:mm:ss"
      */
     public static String formatLocalDateTime(LocalDateTime dateTime) {
