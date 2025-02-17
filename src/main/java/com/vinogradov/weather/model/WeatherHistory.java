@@ -23,14 +23,16 @@ public class WeatherHistory {
     private double temperature;
     private double feelsLike;
     private LocalDateTime requestTime;
+    private String iconCode;
 
-    public WeatherHistory(String latitude, String longitude, String description, double temperature, double feelsLike, LocalDateTime requestTime) {
+    public WeatherHistory(String latitude, String longitude, String description, double temperature, double feelsLike, LocalDateTime requestTime, String iconCode) {
         this.latitude = latitude;
         this.longitude = longitude;
         this.description = description;
         this.temperature = temperature;
         this.feelsLike = feelsLike;
         this.requestTime = requestTime;
+        this.iconCode = iconCode;
     }
 }
 
